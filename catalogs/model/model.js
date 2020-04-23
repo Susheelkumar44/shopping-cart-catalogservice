@@ -17,11 +17,17 @@ const productsSchema = new Schema(
             type : String,
             enum : ['grocery', 'electronics', 'medicine']
         },
+        productDetails : {
+            type : String
+        },
         subCategory : {
             type : String
         },
         distributor : {
             type: String
+        },
+        InStock : {
+            type: Boolean
         },
         price  : Number,
         IsDeleted : {
